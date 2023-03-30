@@ -1,6 +1,6 @@
  .sidebar {
     position: sticky;
-    top: 5rem;
+    top: 6rem;
     flex: 0.2; /* takes up 20% of screen */
     border-radius: 0.625rem;
     text-align: center;

@@ -1,8 +1,7 @@
 .header {
-	position: sticky;
+	position: sticky !important;
 	top: 0;
 	display: flex;
-	justify-content: space-evenly;
 	background-color: white;
 	border-bottom: 0.1px solid lightgray;
 	padding: 0.625rem 0;
