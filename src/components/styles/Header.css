@@ -1,0 +1,43 @@
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: white;
+	border-bottom: 0.1px solid lightgray;
+	padding: 0.625rem 0;
+	width: 100%;
+	z-index: 999; /* so that it always stays on top */
+}
+
+.header__left {
+	display: flex;
+}
+
+.header__search {
+	padding: 0.625rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0.313rem;
+	height: 1.375rem;
+	color: gray;
+	background-color: #eef3f8;
+}
+
+.header__search > input {
+	outline: none;
+	background: none;
+	border: none;
+}
+
+.linkedin__icon {
+	font-size: 2.53rem;
+}
+
+.header__right {
+	display: flex;
+}
+
+.accountIcon {
+	margin-left: 0.625rem;
+}
