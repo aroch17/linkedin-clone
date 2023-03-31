@@ -15,4 +15,6 @@
 .inputOption > h4 {
     margin-left: 0.313rem;
     font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0;
 }
