@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/Header.css'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import LockIcon from '@mui/icons-material/Lock';
 import HomeIcon from '@mui/icons-material/Home';
 import SuperVisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -26,7 +27,7 @@ function Header() {
         <div className="mainHeader">
             <Navbar className='header' bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#"><LinkedInIcon fontSize='large' /></Navbar.Brand>
+                    <Navbar.Brand href="#">{user ? <LockOpenIcon fontSize='large' />:<LockIcon fontSize='large' />}</Navbar.Brand>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"

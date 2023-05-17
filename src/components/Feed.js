@@ -20,7 +20,7 @@ function Feed() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        const q = query(collection(db, 'posts'), orderBy('timestamp', 'desc'))
+        const q = query(collection(db, 'posts2'), orderBy('timestamp', 'desc'))
         // the onsnapshot function executes everytime there is a change in the database
         onSnapshot(q, (snapshot) => {
             setPosts(snapshot.docs.map((doc) => {
@@ -34,7 +34,7 @@ function Feed() {
 
     const addPost = (event) => {
         event.preventDefault()
-        addDoc(collection(db, 'posts'), {
+        addDoc(collection(db, 'posts2'), {
             name: user.displayName,
             description: user.email,
             message: input,
@@ -65,13 +65,13 @@ function Feed() {
 
             {/* Posts */}
             <FlipMove>
-            {posts.map((post) => {
-                return <Post key={post.id}
-                    name={post.data.name}
-                    description={post.data.description}
-                    message={post.data.message}
-                    photoUrl={post.data.photoUrl} />
-            })}
+                {posts.map((post) => {
+                    return <Post key={post.id}
+                        name={post.data.name}
+                        description={post.data.description}
+                        message={post.data.message}
+                        photoUrl={post.data.photoUrl} />
+                })}
             </FlipMove>
             {/* flip move is used to animate the creation of posts */}
         </div>

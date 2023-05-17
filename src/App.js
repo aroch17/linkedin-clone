@@ -23,7 +23,7 @@ function App() {
           displayName: userAuth.displayName,
           profilePic: userAuth.photoURL,
         }))
-        console.log(userAuth.displayName)
+        // console.log(userAuth.displayName)
       } else {
         dispatch(logout())
       }

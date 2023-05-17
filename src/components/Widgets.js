@@ -24,8 +24,8 @@ function Widgets() {
           <InfoIcon />
         </div>
 
-        {newsArticle('ayush loves aarushi', 'aarushi is the cutest patootie in the world')}
-        {newsArticle('exam crises rise', 'psych is coming to get you')}
+        {newsArticle('Assignment 3 scrapped.', 'A day to rejoice')}
+        {newsArticle('Exam crises rise', 'Psych is coming to get you')}
     </div>
   )
 }

@@ -5,6 +5,7 @@ import './styles/Login.css'
 import { useDispatch } from 'react-redux';
 import { login } from '../features/userSlice';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import logo from './linkedout.png';
 
 function Login() {
     const [fullName, setFullName] = useState('')
@@ -53,9 +54,9 @@ function Login() {
 
     return (
         <div className='login'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="" />
+            <img className="logo" src={logo} alt="" />
 
-            <form>
+            <form className='loginForm'>
                 <input type="text" placeholder='Full Name (required if registering)' value={fullName} onChange={e => setFullName(e.target.value)}/>
                 <input type="text" placeholder='Profile Picture URL (optional) ' value={url} onChange={e => setUrl(e.target.value)}/>
                 <input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>

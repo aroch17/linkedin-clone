@@ -29,7 +29,7 @@
 }
 
 .login > form > button {
-	width: 365px;
+	width: 21.875rem;
 	height: 3.125rem;
 	font-size: large;
 	color: white;
@@ -54,4 +54,9 @@
 
 .login > p {
     margin-top: 1.25rem;
+}
+
+.logo {
+	transform: scale(7);
+	pointer-events: none;
 }
